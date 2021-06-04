@@ -1,13 +1,20 @@
 import java.util.Scanner;
 public class W1_2_HelloSum{
+	/*
+	프로그램 실행 시 파라미터를 넘길 수 있습니다.
+	파라미터는 String 배열인 args 변수로 받아 사용합니다.
+	(사용예)
+	컴파일 javac W1_2_HelloSum.java -encoding utf8
+	실행
+	  java  W1_2_HelloSum  매개변수
+	  java  W1_2_HelloSum  3
+	*/
 	public static void main(String[] args){		
 		String version = null;
-		//System.out.println("args.length = " + args.length);
 		
 		if(args.length > 0){
 			version = args[0];
 			
-			//System.out.println("Version : " + version);
 			switch(version){				
 				case "1":
 					System.out.println("더하기 프로그램 버전 1");
@@ -29,6 +36,7 @@ public class W1_2_HelloSum{
 					System.out.print("1부터 10까지의 합은 ");
 					System.out.println(result_v1);
 					break;
+
 				case "2":
 					System.out.println("더하기 프로그램 버전 2");
 					//더하기 프로그램 버전 2 (정수형 배열 사용)
@@ -40,19 +48,21 @@ public class W1_2_HelloSum{
 					System.out.print("1부터 10까지의 합은 ");
 					System.out.println(result_v2);
 					break;
+
 				case "3":
 					System.out.println("더하기 프로그램 버전 3");
 					//더하기 프로그램 버전 3 (배열을 for문을 사용해서 결과값 구하기)
 					int [] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 					int result_v3 = 0;
 					System.out.println("배열의 길이:" + num.length);
-					//for문 for(시작; 끝; 단위)
+					//for문 for(시작; 끝; 스텝)
 					for(int i_=0; i_ < num.length; i_=i_+1){
 						result_v3 = result_v3 + num[i_];
 					}
 					System.out.print("1부터 10까지의 합은 ");
 					System.out.println(result_v3);
 					break;
+
 				case "4":
 					System.out.println("더하기 프로그램 버전 4");
 					//더하기 프로그램 버전 4 (변수만을 이용해서 덧셈 계산하기)
@@ -60,8 +70,8 @@ public class W1_2_HelloSum{
 					int toNum = 10000;
 					int result_v4 = 0;
 					for(int i__ = fromNum; i__ <= toNum; i__++){
-						//i++  →  i = i + 1
-						//result += i  →  result = result + i
+						//i++  →  i = i + 1  ☜ 이 둘은 같은 표현입니다.
+						//result += i  →  result = result + i ☜ 이 둘은 같은 표현입니다.
 						result_v4 += i__;
 					}
 					System.out.println(
@@ -69,6 +79,7 @@ public class W1_2_HelloSum{
 						+ result_v4 + "입니다."
 					);
 					break;
+
 				case "5":
 					System.out.println("더하기 프로그램 버전 5");
 					// 키보드로 입력받기 위한 방법
@@ -93,8 +104,8 @@ public class W1_2_HelloSum{
 						"결과 : 1부터 "+ inputNumber+"까지 합계는 " 
 						+ result_v5	+ " 입니다."
 					);
-					
 					break;
+
 				default:
 					System.out.println("해당 버전이 없습니다!");
 					break;

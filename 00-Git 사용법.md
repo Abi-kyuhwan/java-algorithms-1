@@ -4,11 +4,11 @@
   + [Git 오픈튜토리얼](https://opentutorials.org/module/155/2475)
 # 준비물
   + [깃(Git) 다운로드와 설치](https://git-scm.com/downloads)
-  + [소스트리(SourceTree) 다운로드와 설치](https://www.sourcetreeapp.com)
-  + ※ 모든 설치는 기본 설정으로 합니다.
+  + [소스트리(SourceTree) 다운로드와 설치](https://www.sourcetreeapp.com)  
+※ 모든 설치는 기본 설정으로 합니다.
 # 깃 명령어 (기본)
 ## 1. 내 컴퓨터에서 초기화 하기
-+ git init
++ git init  
 내 컴퓨터의 작업 폴더로 이동한 후 해당 폴더를 git 이 관리할 수 있게 등록 및 초기화 합니다.
 ```
 C 드라이브의 git 폴더가 작업폴더 일 때
@@ -17,8 +17,8 @@ C 드라이브의 git 폴더가 작업폴더 일 때
 ```
 ![git-init](./images/git-init.png)
 
-+ 사용자 아이디와 이메일 등록
-git 작업 폴더에서 사용할 아이디와 이메일 등의 환경설정을 저장합니다.
++ 사용자 아이디와 이메일 등록  
+git 작업 폴더에서 사용할 아이디와 이메일 등의 환경설정을 저장합니다.  
 이때 git config 명령어를 사용합니다.
 ```
 사용자 이름 등록
@@ -30,7 +30,7 @@ git 작업 폴더에서 사용할 아이디와 이메일 등의 환경설정을 
 ![git-config](./images/git-config.png)
 
 ## 2. 작업내역 저장하기 : git commit
-git은 버전을 관리하는 프로그램으로 소스코드의 작업내역을 저장합니다. 포토샵과 엑셀과 같은 유틸리티의 History 저장 기능과 비슷하지만 훨씬 더 강력한 기능을 가지고 있습니다.  
+git은 버전을 관리하는 프로그램으로 소스코드의 작업내역을 저장합니다. 포토샵과 엑셀과 같은 유틸리티의 History 저장 기능과 비슷하지만 훨씬 더 강력하고 유연한 기능을 가지고 있습니다.  
   
 작업내역을 저장하기 위해서는 다음 2 단계를 거칩니다.  
   
@@ -53,10 +53,10 @@ git은 버전을 관리하는 프로그램으로 소스코드의 작업내역을
 ![git-commit](./images/git-commit.png)
 
 ## 3. 원격 저장소 활용하기 (GitHub 다운로드와 업로드)
-다양한 원격저장소가 있지만 GitHub를 예를 들어 설명합니다. GitHub 회원가입과 계정생성, 그리고 원격저장소 만들기는 링크와 검색을 참고하세요. [GitHub](https://github.com), [Git인프런강의](https://www.inflearn.com/course/git-and-github)
+다양한 원격 저장소가 있지만 GitHub를 예를 들어 설명합니다. GitHub 회원가입과 계정생성, 그리고 원격 저장소 만들기는 링크와 검색을 참고하세요. [GitHub](https://github.com), [Git인프런강의](https://www.inflearn.com/course/git-and-github)
 
 ### 3-1. 나의 원격 저장소 연결하고 다운로드 하기
-+ 원격 저장소(repository) 연결하기
++ 원격 저장소(repository) 연결하기  
 이를 위해 원격저장소가 만들어져 있어야 합니다.
 ```
 원격 저장소 연결하기
@@ -66,7 +66,7 @@ git은 버전을 관리하는 프로그램으로 소스코드의 작업내역을
 > git pull origin master
 또는
 > git pull origin main
-※ 원격저장소 설정에 따라 master 또는 main으로 변경합니다.
+※ 원격 저장소 설정에 따라 master 또는 main으로 변경합니다.
 ```
 ![git-remote-pull](./images/git-remote-pull.png)
 

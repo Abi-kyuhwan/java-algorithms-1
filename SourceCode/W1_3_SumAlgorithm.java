@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class W1_3_SumAlgorithm {
+  /*
+    static 키워드를 사용하여 합을 계산하는 함수를 만듭니다.
+  */
   public static void main(String[] args){
     int result = 0;
     int number = 10;
@@ -61,9 +64,12 @@ public class W1_3_SumAlgorithm {
     }
   }
   public static int getSum(int n, int number){
+    // static 키워드 : 객체를 생성하지 않고 함수를 호출하기 위해 사용합니다.
+    // int 키워드 : 함수를 끝내고 return 받을 값이 int(정수형) 임을 선언합니다.
+    // int n, int number : 함수를 실행할 때 넘길 파라미터를 선언합니다.
     int result = 0;
     for(int i=1; i<=number; i++){
-      if(i % n == 0){
+      if(i % n == 0){ // i%n=0 나머지가 0인지 체크합니다.
         result = result + i;
       }
     }
