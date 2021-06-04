@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class HelloSum{
+public class W1_2_HelloSum{
 	public static void main(String[] args){		
 		String version = null;
 		//System.out.println("args.length = " + args.length);

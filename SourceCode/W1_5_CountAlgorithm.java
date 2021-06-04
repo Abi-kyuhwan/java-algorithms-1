@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CountAlgorithm {
+public class W1_5_CountAlgorithm {
   // 1부터 특정 수까지 N의 배수의 개수를 구합니다
   public static void main(String[] arg){
     int count = 0;

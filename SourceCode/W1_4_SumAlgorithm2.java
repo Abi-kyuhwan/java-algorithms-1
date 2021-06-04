@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SumAlgorithm2 {
+public class W1_4_SumAlgorithm2 {
   public static void main(String[] args){
     int toNumber = 10;
     Scanner scn = new Scanner(System.in);

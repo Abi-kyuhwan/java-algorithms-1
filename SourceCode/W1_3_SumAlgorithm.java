@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumAlgorithm {
+public class W1_3_SumAlgorithm {
   public static void main(String[] args){
     int result = 0;
     int number = 10;
